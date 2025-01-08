@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Saldo Inicial
+        // let saldo = 1000
+
+        // function operacaoBancaria() {
+        //     let operacao = prompt("Qual a operação vc deseja realizar? (deposito / saque / sair)").toLowerCase()
+        //     if (operacao === "deposito") {
+        //         let valor = parseFloat(prompt("Qual é o valor do depósito?"))
+        //         if (valor <= 0) {
+        //             alert("Valor inválido")
+        //         } else {
+        //             saldo = saldo + valor
+        //             alert(`Depósito realizado com sucesso! Saldo atual ${saldo}`)
+        //         }
+        //     } else if (operacao === "saque") {
+        //         let valor = parseFloat(prompt("Qual é o valor que vc deseja sacar"))
+        //         if (valor <= 0) {
+        //             alert("Valor inválido")
+        //         } else if (valor > saldo) {
+        //             alert("Saldo Insuficiente")
+        //         } else {
+        //             saldo = saldo - valor
+        //             alert(`Saque realizado com sucesso! Saldo atual ${saldo}`)
+        //         }
+
+        //     }
+
+        // }
+
+
+        // alert(`Obrigado por usar o sistema bancário, Saldo final ${saldo}`)
+
+        // operacaoBancaria()
+
+
+        function deposito(valor) {
+            if (valor <= 0) {
+                alert("Valor inválido")
+            } else {
+                saldo = saldo + valor
+                alert(`Depósito realizado com sucesso! Saldo atual ${saldo}`)
+            }
+
+        }
+
+        function saque(valor) {
+            if (valor <= 0) {
+                alert("Valor inválido")
+            } else if (valor > saldo) {
+                alert("Saldo Insuficiente")
+            } else {
+                saldo = saldo - valor
+                alert(`Saque realizado com sucesso! Saldo atual ${saldo}`)
+            }
+
+        }
+
+        let saldo = 1000
+
+        function operacaoBancaria() {
+            let continuar = true
+            while (continuar) {
+                let operacao = prompt("Qual a operação vc deseja realizar? (1. deposito / 2. saque / 3. sair)").toLowerCase()
+                if (operacao === "1") {
+                    let valor = parseFloat(prompt("Qual o valor do depósito?"))
+                    deposito(valor)
+
+                } else if (operacao === "2") {
+                    let valor = parseFloat(prompt("Qual o valor do saque?"))
+                    saque(valor)
+                } else if (operacao == "3") {
+                    continuar = false
+                    alert(`Obrigado por usar o sistema bancário, Saldo final ${saldo}`)
+                }
+            }
+
+        }
+        operacaoBancaria()
+
+
+    </script>
+</body>
+
+</html>

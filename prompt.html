@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    
+    /*let numero1 = parseInt(prompt ("Digite um numero"))
+    let numero2 = parseInt(prompt ("Digite o segundo numero"))
+
+    console.log(numero1 + numero2)*/
+
+    // Verificar se o nome da pessoa tem a letra A
+   /* let nome = prompt("Digite o seu nome")
+    if(nome.includes("a") || nome.includes ("A")) { //includes - 
+        console.log ("O seu nome tem a letra A")
+    }else {
+        console.log("O seu nome não tem a letra A")
+    }*/
+   /* let nome = prompt("Digite o seu nome")
+    console.log(nome.toLowerCase())
+    console.log(nome.toUpperCAnDease()) //toUpperCase - converte toda a string em letras maiúsculas
+    if(nome.toLowerCase().includes ("a")) { // toLowerCase - converte toda a string em letras minúsculas 
+        console.log ("O seu nome tem a letra A")
+    }else {
+        console.log("O seu nome não tem a letra A")
+    } */
+   //Calculadora simples de 2 números
+
+   // 1º Pergunta a operação matemática:
+   //    adição, subtração, multiplicação, divisão
+   // 2º Pergunta os 2 números
+   // 3º Retorna o valor da operação no console
+
+   let operacao = prompt ("Qual operação vc deseja fazer (+ ,- , * , /) ?")
+   while (operacao != "+" || "-"|| "*" ||"/"){
+    let operacao = prompt ("Escolha entre as operações permitidas")
+   }
+   let numero1 = parseInt(prompt ("Digite o primeiro número"))
+   let numero2 = parseInt(prompt("Digite o segundo número"))
+   while (operacao == "/" && numero2 === 0) {
+    let numero2 = parseInt(prompt("Digite o segundo número diferente de zero"))
+   }
+   if(operacao == "+") {
+    console.log (numero1 + numero2)
+   }else if (operacao == "-"){
+    console.log (numero1 - numero2)
+   }else if (operacao == "*") {
+    console.log (numero1 * numero2)
+   }else if (operacao == "/") {
+    console.log(numero1 / numero2)
+   } 
+
+   // Exibir a faixa etária
+// se a pessoa nasceu entre 1946 e 1964: Baby boomer
+// se a pessoa nasceu entre 1965 e 1980: Geração X
+// se a pessoa nasceu entre 1981 e 1996: Miillenial
+// se a pessoa nasceu entre 1997 e 2021: Geração Z
+// se a pessoa nasceu em 2013: Geração Alpha
+
+/*let idade = parseInt(prompt("Qual a sua idade?"))
+
+let ano_nascimento = (parseInt(2025 - idade))
+console.log(ano_nascimento)
+if (ano_nascimento == 2013) {
+    console.log ("Geraçao Alpha")
+} else if ((ano_nascimento >= 1946) && (ano_nascimento <= 1964 )) {
+    console.log ("Baby boomer")
+} else if ((ano_nascimento >= 1965) && (ano_nascimento <= 1980 )) {
+    console.log ("Geração X")
+} else if ((ano_nascimento >= 1981) && (ano_nascimento <= 1996 )) {
+    console.log ("Millenial")
+} else {
+    console.log ("Geração Z")
+}
+   </script> 
+</body>
+</html>
