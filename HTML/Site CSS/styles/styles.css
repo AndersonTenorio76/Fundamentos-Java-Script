@@ -1,0 +1,55 @@
+body {
+    background-color: beige;
+    color: black;
+    font-family: "Noto Sans", serif;
+}
+
+p {
+
+    font-size: 20px;
+    background-color: chartreuse;
+    /* Largura */
+    width: 50% ;
+    /* Altura */
+    height: 100px;
+    border: 10px solid #000;
+    /* Definir tosoos lados com uma única tag */
+    margin: 100px 100px 100px 50px;
+
+    /* Define a margem específica
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    margin-right: 10px; */
+
+    /* Todos os lados */
+    margin: 10px;
+
+    /* Arredonda os lados das bordas */
+    border-radius: 10px;
+
+    /* Alinhamento de texto */
+    text-align: center;
+    
+}
+
+strong {
+    background-color: blue;
+    color: blueviolet;
+    width: 100px;
+    height: 50px;
+    margin-right: 100px;
+    
+}
+.subtitulo {
+    text-align: right;
+    color: white;
+}
+
+#mes {
+    background-color: aqua;
+}
+
+img {
+    width: 100px; height: 100px;
+}
